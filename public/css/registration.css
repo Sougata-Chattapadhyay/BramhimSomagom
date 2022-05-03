@@ -1,0 +1,29 @@
+body {
+    /* background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.teahub.io%2Fviewwp%2Fxmihiw_durga-puja-background-hd%2F&psig=AOvVaw1dAXiMnDRvcBqKY05l4Oro&ust=1641710052621000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJjk59rEofUCFQAAAAAdAAAAABAD') fixed; */
+    background: url('../images/login-images/reg-img.png') fixed;
+   /* color: rgb(247, 7, 7); */
+    background-size: cover;
+}
+
+*[role="form"] {
+   max-width: 530px;
+   padding: 15px;
+   margin: 0 auto;
+   border-radius: 0.3em;
+   background-color: #f2f2f2;
+}
+h2{
+font-size: 30px;
+}
+
+*[role="form"] h2 { 
+   font-family: 'Open Sans' , sans-serif;
+   font-size: 40px;
+   font-weight: 600;
+   color: #000000;
+   margin-top: 5%;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+}
+

@@ -1,0 +1,366 @@
+
+@import url("../css/fonts.css");
+
+
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+:root{
+    /* Theme colors */
+    --text-grey: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+/* gradient color */
+--orange: linear-gradient(to top, #f54702 0%, #c49789 100%);
+--gradient-org: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+
+
+/* Theme font family */
+    --Abel:'Abel-Regular.ttf',cursive;
+    --Anton:'Anton',cursive;
+    --Josefin:'Josefin',cursive;
+    --Lexend: 'Lexend',cursive;
+    --Livvic:"Livvic",cursive;
+}
+
+
+/* ---------------Global Classes--------------- */
+
+a{
+    text-decoration: none;
+    color: var(--text-grey);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Lexend);
+    text-align: center;
+    font-size: 50px;
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+span{
+    font-family: var(--Abel);
+}
+
+.container{
+    margin: 0 5vw;
+
+}
+
+
+/* -------x-------Global Classes-------x------- */
+
+/* -----------------nav-------------- */
+
+
+.nav{
+    background:white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.collapse{
+    height: 30rem;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    font-size: 1.4rem;
+    color: var(--text-grey);
+}
+
+.nav .nav-items{
+    list-style-type: none;
+    display: flex;
+    /* flex-direction: row; */
+    margin: 0;
+    color: black;
+
+}
+
+.nav .nav-items .nav-link{
+    font-size: 1.1rem;
+    padding: 1.6rem 1rem;
+    position: relative;
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: var(--midnight);
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: white;
+}
+
+.nav .nav-brand{
+    /* font-size: 1.6rem; */
+    /* padding: 1rem 0;
+    display: block;
+    font-family: Var(--Lexend);
+    font-size: 1.6rem; */
+    margin: 0;
+    margin-top: 3px;
+}
+
+.nav .social{
+    padding: 1.4rem 0;
+}
+
+.nav .social i{
+    padding: 0 .2rem;
+}
+.nav .social i:hover {
+    color: #113CFC;
+}
+
+/* ------------x-----nav------x-------- */
+
+.cat{
+    /* visibility: hidden; */
+
+    margin: 0px 8px;
+}
+/* ----------------------navbars DROPDOWN--------------------------- */
+.dropbtn {
+    /* background-color: #04AA6D; */
+    color:var(--text-grey);
+    padding-top: 26px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+  }
+  
+  /* The search field */
+  #myInput {
+    box-sizing: border-box;
+    background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* The search field when it gets focus/clicked on */
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .cat-dropdown {
+    position: relative;
+    display: inline-block;
+    left: 550px;
+    /* z-index: +10; */
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+/* -----------xx---------navbars DROPDOWN-----------xx-------------- */
+
+.fx{
+    position: fixed;
+}
+/* -----------------Main content------------------ */
+main .site-title{
+    /* background: url('../images/header-durga-puja.jpg') ; */
+    background: url('../images/header-color-durga.jpg') ;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    /* color: var(--white); */
+    color:white;
+}
+
+main .site-title h1, h3{
+    margin: .3rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    /* background: var(--orange); */
+background: var(--gradient-org) ;
+}
+main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    color: white;
+}
+/* -----------------optn Carousel----------------- */
+
+main .optn{
+    background: url("https://i.pinimg.com/originals/fb/bd/89/fbbd8990d3195e3f470529e2c18e507f.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+}
+
+main .optn .optn-post{
+    /* padding-top: 6rem; */
+    padding-top: 6rem; 
+}
+
+main .optn-post .optn-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+
+    
+}
+
+main .optn-content .optn-title{
+    padding: 2rem 0;
+}
+
+main .optn-content .btn-optn{
+    padding: .7rem 2rem;
+    background: var(--gradient-org);
+    margin: .5rem;
+}
+
+main .optn-content span{
+    display: block;
+}
+section .container .owl-nav{
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+/* .owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next{
+    color: var(--text-grey);
+    background:transparent;
+    font-size: 2rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+    font-size: 2rem;
+} */
+/* --------xx-------optn Carousel-------xx-------- */
+
+/* ---------xx------Main content-------xx--------- */
+
+
+/* viewport less then of equal to 750px */
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav-items{
+        flex-direction: column;
+
+    }
+    .nav .toggle-collapse{
+        display: initial;
+    }
+};
+    
+
+/* viewport less then of equal to 750px */
+
